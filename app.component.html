@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+
+Name: <input type="text" #sname>
+&nbsp; <button (click)="getName(sname.value)">submit</button>
+
+<h2 >student name : <span style="color: red; font-variant: small-caps;">{{userName}}</span> </h2>
+
+<!-- real-time -->
+ <hr>
+ <h1>{{title}} (On Time)</h1>
+
+ Name: <input type="text" [(ngModel)]="uname">
+ <h2 >UserName: <span style="color: red; font-variant: small-caps;">{{uname}}</span></h2>
+ 
